@@ -3,15 +3,16 @@ def factorial(n):
 		return 1
 	else:
 		return n * factorial(n - 1)
+a = input("input number")
 while True:
-	a = input("input number : ")
 	if a == -1:
 		break
-	elif int(a) != float(a):
+	elif int(float((a))) != float(a):
 		print ("please int integer")
-		a = int(input("input number again :"))
+		a = input("input number again :")
 
 	else:
-		print(factorial(a))
+		print(factorial(int(float(a))))
+		a = input("input number")
 	
 	
