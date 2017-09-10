@@ -13,4 +13,3 @@ while num != -1:
 			factorial *= i
 		print("%d! = %d" %(num, factorial))
 		num = float(input("Enter a number: "))
-
