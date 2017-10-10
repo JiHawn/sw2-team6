@@ -6,6 +6,10 @@ def fibo_rec(n):
 	return fibo_rec(n - 1) + fibo_rec(n - 2)
 
 def fibo_loop(n):
+	if n == 0:
+		return 0
+	elif n == 1:
+		return 1
 	a = [1]
 	for i in range(n):
 		try:
@@ -18,7 +22,7 @@ def fibo_loop(n):
 
 while True:
 	n = int(input("Enter a number: "))
-	if n == -1 or n == 0:
+	if n == -1:
 		break
 	ts = time.time()
 	print("fibo_rec(%d) = %d, time = %.6f" %(n, fibo_rec(n), time.time() - ts))
