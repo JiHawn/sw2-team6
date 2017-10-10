@@ -27,6 +27,21 @@ def iterfibo2(nbr) : #loop using variable
 			a,b= b,a+b
 			count +=1
 		return b
+
+def iterfibo3(n):
+        if n == 0:
+                return 0
+        elif n == 1:
+                return 1
+        a = [1]
+        for i in range(n):
+                try:
+                        a[2] = a[0] + a[1]
+                        a[0] = a[1]
+                        a[1] = a[2]
+                except:
+                        a.append(1)
+        return a[2]
 	
 while True :
 	try:
@@ -49,3 +64,8 @@ while True :
 	fibonumber2 = iterfibo2(nbr)
 	ts3 = time.time() - ts3
 	print("Fibo_loop_using_variable(%d)=%d, time %.6f" %(nbr, fibonumber2, ts3))
+
+	ts4 = time.time()
+        fibonumber3 = iterfibo3(nbr)
+        ts4 = time.time() - ts4
+        print("Fibo_loop_using_list2(%d)=%d, time %.6f" %(nbr, fibonumber3, ts4))
