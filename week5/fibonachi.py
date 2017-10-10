@@ -66,6 +66,6 @@ while True :
 	print("Fibo_loop_using_variable(%d)=%d, time %.6f" %(nbr, fibonumber2, ts3))
 
 	ts4 = time.time()
-        fibonumber3 = iterfibo3(nbr)
-        ts4 = time.time() - ts4
-        print("Fibo_loop_using_list2(%d)=%d, time %.6f" %(nbr, fibonumber3, ts4))
+	fibonumber3 = iterfibo3(nbr)
+	ts4 = time.time() - ts4
+	print("Fibo_loop_using_list2(%d)=%d, time %.6f" %(nbr, fibonumber3, ts4))
