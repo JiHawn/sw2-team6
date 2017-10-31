@@ -1,0 +1,15 @@
+num = float(input("Enter a number: "))
+while num != -1:
+	if int(num) != num:
+		print("정수를 입력해주세요.")
+		num = float(input("Enter a number: "))
+	elif num < 0:
+		print("양의 수를 입력해주세요.")
+		num = float(input("Enter a number: "))
+	else:
+		factorial = 1
+		num = int(num)
+		for i in range(num,0,-1):
+			factorial *= i
+		print("%d! = %d" %(num, factorial))
+		num = float(input("Enter a number: "))
