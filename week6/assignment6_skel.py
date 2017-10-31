@@ -18,30 +18,6 @@ class ScoreDB(QWidget):
         
         
     def initUI(self):
-        '''
-        label = ['Name', 'Age', "Score", 'Amount']
-        push = ['Add','Del', 'Find', 'Inc', 'Show']
-        p_d = ['AddClick', 'DelClick', 'FindClick', 'IncClick', 'ShowClick']
-
-        self.list = []
-        self.list2 = []
-        self.plist = []
-        self.txt = QTextEdit()
-        self.combo = QComboBox(self)
-
-        key = QLabel("key", self)
-        result = QLabel("Result", self)
-        self.scdb = self.readScoreDB()
-        print(self.scdb)
-
-        for i in label:
-            self.list.append(QLabel(i,self))
-            self.list2.append(QLineEdit(self))
-            self.combo.addItem(i)
-            
-        '''
-        self.list = []
-        self.list2 = []
         # Layout name age score
         name = QLabel("Name", self)
         name.move(15, 10)
@@ -127,11 +103,6 @@ class ScoreDB(QWidget):
 
     def button1(self):
         sender = self.sender()
-        '''record = {"Name":self.list2[0].text(), 'Age':self.list2[1].text(),'Score':self.list2[2].text()}
-        self.scdb +=[record]
-        self.resultEdit.setText("")
-        self.showScoreDB()
-'''
     def button2(self):
         sender = self.sender()
     def button3(self):
