@@ -91,8 +91,7 @@ class Calculator(QWidget):
             self.display.setText(functionList[key](self.display.text()))
         else:
             self.display.setText(self.display.text() + key)
-
-
+        
 
 if __name__ == '__main__':
 
