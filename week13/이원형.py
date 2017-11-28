@@ -30,5 +30,4 @@ class Guess:
             checker = True
         else :
             checker = False
-
-            return checker
+        return checker
