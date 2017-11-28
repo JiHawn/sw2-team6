@@ -26,7 +26,7 @@ class Guess:
                     currentStatus += '_'
             self.currentStatus = currentStatus
         checker = None
-        if self.currentStatus == self.secretWord :
+        if self.currentStatus == self.secretWord:
             checker = True
         else :
             checker = False
