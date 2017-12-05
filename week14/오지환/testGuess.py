@@ -52,12 +52,12 @@ class TestGuess(unittest.TestCase):
     
     def testFinished(self):
         self.g2.guess('b')
-        self.assertEqual(self.g2.finished(), False)
+        self.assertFalse(self.g2.finished())
         self.g2.guess('a')
-        self.assertEqual(self.g2.finished(), True)
+        self.assertTrue(self.g2.finished())
 
     def testGuess(self):
-        self.assertEqual(self.g1.guess('z') , False)
+        self.assertFalse(self.g1.guess('z'))
 
 if __name__ == '__main__':
     unittest.main()
